@@ -49,5 +49,5 @@ def andSearch(inverseIndex, query):
 
 file = openFile("stories_big.txt")
 inverseDic = makeInverseIndex(file)
-print orSearch(inverseDic, ["Does", "She"])
-print andSearch(inverseDic, ["Does", "She"])
+print(orSearch(inverseDic, ["Does", "She"]))
+print(andSearch(inverseDic, ["Does", "She"]))
