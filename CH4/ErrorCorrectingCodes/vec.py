@@ -194,7 +194,7 @@ class Vec:
     f - a dictionary mapping (some) domain elements to field elements
         elements of D not appearing in f are implicitly mapped to zero
     """
-    def __init__(self, labels, function):
+    def __init__(self, labels, function) -> object:
         assert isinstance(labels, set)
         assert isinstance(function, dict)
         self.D = labels
