@@ -33,3 +33,4 @@ class One:
 
 one = One()
 zero = 0
+
