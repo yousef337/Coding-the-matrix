@@ -14,9 +14,9 @@ def translation(alpha, beta):
                {("x", "x"): 1, ("x", "u"): alpha, ("y", "y"): 1, ("y", "u"): beta, ("u", "u"): 1})
 
 
-def scale(alpha, beta):
+def scale(alpha, beta, zeta = 1):
     return Mat(({"x", "y", "u"}, {"x", "y", "u"}),
-               {("x", "x"): alpha, ("y", "y"): beta, ("u", "u"): 1})
+               {("x", "x"): alpha, ("y", "y"): beta, ("u", "u"): zeta})
 
 
 def rotation(theta):
@@ -50,5 +50,3 @@ def grayscale():
 
 def reflect_about(x1, y1, x2, y2):
     return reflect_x()*translation(0, -y1)*rotation(math.atan((y2-y1)/(x2-x1)))
-
-print(reflect_about(3,5,4,1))
